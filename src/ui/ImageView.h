@@ -56,6 +56,8 @@ class ImageView : public View {
 	const ci::Color&		getColor() const					{ return mColor; }
 	ci::Anim<ci::Color>*	getColorAnim()						{ return &mColor; }
 
+	ImageRef	getImage() const	{ return mImage; }
+
   protected:
 	virtual void draw( Renderer *ren ) override;
 
